@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:layout_height="match_parent"
+    tools:context="com.example.escomputer.myvoiceapp.MyProject.CameraRecognition">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:layout_weight="10">
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/surface_view"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_weight="10">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/textview"
+        android:text="No text"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textColor="#fff"
+        android:background="@drawable/btn"
+        android:id="@+id/btn_speak"
+        android:text="Speak"/>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="#fff"
+        android:layout_weight="2"
+        android:background="@drawable/btn"
+
+        android:id="@+id/btn_stop"
+        android:text="Stop"/>
+    </LinearLayout>
+</LinearLayout>
